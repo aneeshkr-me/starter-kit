@@ -1,0 +1,86 @@
+.main-content
+  display: block
+  padding: 30px
+  top: 50%
+  left: 50%
+  height: 70%
+  width: 70%
+  max-width: 960px
+  max-height: 500px
+  position: absolute
+  background-color: white
+  transform: translate(-50%, -50%)
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3)
+
+h1
+  margin-left: 50px
+  font-family: "Roboto Slab", serif
+  font-size: 42px
+  font-weight: 400
+  color: $primary-color
+
+.row
+  display: flex
+  color: $secondary-color
+  justify-content: space-between
+  margin-left: 30px
+
+  .left-section
+    padding: 0px 20px
+    width: 30%
+    line-height: 1.6
+    font-size: 16px
+    p
+      margin: 0px
+      padding: 0px
+
+  .right-section
+    padding: 10px
+    width: 70%
+    background-image: url("../img/image.png")
+    background-size: cover
+
+li
+  margin-left: -35px
+  list-style: none
+
+  &::before
+    content: "─"
+    margin-right: 5px
+
+.footer
+  float: right
+  line-height: 8px
+
+  h2
+    text-align: right
+    font-size: 18px
+    font-weight: 400
+    color: $primary-color
+
+  a
+    text-decoration: none
+    text-align: right
+    font-size: 13px
+    color: $secondary-color
+
+
+@media (max-width:960px), (max-height:500px)
+  .main-content
+    min-width: 320px
+    height: auto
+    width: auto
+    max-height: none
+  h1
+    text-align: center
+    font-size: 32px
+    margin: 10px
+  .row
+    padding: 20px
+    margin-left: 0px
+    display: block
+    .left-section
+      width: auto
+    .right-section
+      height: 300px
+      width: auto
