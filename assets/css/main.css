@@ -17,8 +17,10 @@ body {
   position: absolute;
   background-color: white;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3); }
 
 .title a {
   text-decoration: none;
@@ -40,11 +42,15 @@ body {
 
 .row {
   clear: both;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   color: #666;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: 30px; }
   .row .left-section {
     padding: 0px 20px;
