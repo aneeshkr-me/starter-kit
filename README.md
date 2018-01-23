@@ -1,5 +1,5 @@
-
-# System Preparation
+# Starter kit for Building a website with Jekyll site engine using Pug & Sass
+## System Preparation
 
 To use this starter project, you'll need the following things installed on your machine.
 
@@ -14,7 +14,7 @@ To use this starter project, you'll need the following things installed on your 
 
 ## Usage
 
-**development mode**
+**Development Mode**
 
 This will give you file watching, browser synchronisation, auto-rebuild, CSS injecting etc etc.
 
@@ -22,6 +22,6 @@ This will give you file watching, browser synchronisation, auto-rebuild, CSS inj
 $ gulp
 ```
 
-**jekyll**
+**Jekyll**
 
 As this is just a Jekyll project, you can use any of the commands listed in their [docs](http://jekyllrb.com/docs/usage/)
